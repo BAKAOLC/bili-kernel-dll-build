@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Services.Moment</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Services.Moment.Core.MomentAdapter">
+            <summary>
+            动态适配器.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.Core.MomentAdapter.ToMomentInformation(Bilibili.App.Dynamic.V2.DynamicItem)">
+            <summary>
+                将动态模块 <see cref="T:Bilibili.App.Dynamic.V2.DynamicItem"/> 转换为 <see cref="T:Richasy.BiliKernel.Models.Moment.MomentInformation"/>.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.Core.MomentAdapter.ToEmoteText(Bilibili.App.Dynamic.V2.ModuleDesc)">
+            <summary>
+            将动态的描述模块 <see cref="T:Bilibili.App.Dynamic.V2.ModuleDesc"/> 转换为表情文本.
+            </summary>
+            <param name="description">动态的描述模块.</param>
+            <returns><see cref="T:Richasy.BiliKernel.Models.Appearance.EmoteText"/>.</returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.Core.MomentAdapter.ToMomentInformation(Bilibili.App.Dynamic.V2.MdlDynForward)">
+            <summary>
+                将转发动态 <see cref="T:Bilibili.App.Dynamic.V2.MdlDynForward"/> 转换为 <see cref="T:Richasy.BiliKernel.Models.Moment.MomentInformation"/>.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService">
+            <summary>
+            动态发现服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.GetUserMomentsAsync(Richasy.BiliKernel.Models.User.UserProfile,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.GetComprehensiveMomentsAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.GetVideoMomentsAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.GetMyMomentsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.GetUserComprehensiveMomentsAsync(Richasy.BiliKernel.Models.User.UserProfile,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService.GetUserVideoMomentsAsync(Richasy.BiliKernel.Models.User.UserProfile,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Moment.MomentOperationService">
+            <summary>
+            动态操作服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentOperationService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Moment.MomentDiscoveryService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentOperationService.DislikeMomentAsync(Richasy.BiliKernel.Models.Moment.MomentInformation,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentOperationService.LikeMomentAsync(Richasy.BiliKernel.Models.Moment.MomentInformation,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Moment.MomentOperationService.MarkUserMomentAsReadAsync(Richasy.BiliKernel.Models.Moment.MomentProfile,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelBuilderExtensions">
+            <summary>
+            内核构建器扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddMomentDiscoveryService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加动态发现服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddMomentOperationService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加动态操作服务.
+            </summary>
+        </member>
+    </members>
+</doc>

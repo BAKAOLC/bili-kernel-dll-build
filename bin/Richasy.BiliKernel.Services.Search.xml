@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Services.Search</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Services.Search.SearchService">
+            <summary>
+            搜索服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Search.SearchService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.GetTotalHotSearchAsync(System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.GetSearchRecommendsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.GetComprehensiveSearchResultAsync(System.String,System.Nullable{System.Int32},Richasy.BiliKernel.Models.ComprehensiveSearchSortType,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.GetPartitionSearchResultAsync(System.String,Richasy.BiliKernel.Models.Search.SearchPartition,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.GetSearchSuggestsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.SearchUserVideosAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Search.SearchService.SearchHistoryVideosAsync(System.String,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelBuilderExtensions">
+            <summary>
+            内核构建器扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddSearchService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加搜索服务.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.NullableBoolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseHotSearchResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseSearchPartitionResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseSearchRecommendResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.HotSearchResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SearchPartitionResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SearchRecommendResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SearchVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.WebHotSearchItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.WebSearchRecommendItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListWebHotSearchItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListWebSearchRecommendItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListSearchVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.NullableInt64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

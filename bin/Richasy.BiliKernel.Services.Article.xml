@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Services.Article</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService">
+            <summary>
+            专栏服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.GetPartitionsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.GetArticleContentAsync(Richasy.BiliKernel.Models.Article.ArticleIdentifier,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.GetPartitionArticlesAsync(Richasy.BiliKernel.Models.Partition,Richasy.BiliKernel.Models.ArticleSortType,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.GetRecommendArticlesAsync(System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.GetHotCategoriesAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleDiscoveryService.GetHotArticlesAsync(System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Article.ArticleOperationService">
+            <summary>
+            文章操作服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleOperationService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Article.ArticleOperationService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleOperationService.ToggleFavoriteAsync(Richasy.BiliKernel.Models.Article.ArticleIdentifier,System.Boolean,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Article.ArticleOperationService.ToggleLikeAsync(Richasy.BiliKernel.Models.Article.ArticleIdentifier,System.Boolean,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Article.Core.ArticleCategory">
+            <summary>
+            专栏分区.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleCategory.Id">
+            <summary>
+            分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleCategory.ParentId">
+            <summary>
+            父分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleCategory.Name">
+            <summary>
+            分区名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleCategory.Children">
+            <summary>
+            子分区列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Article.Core.ArticleRecommendResponse">
+            <summary>
+            文章推荐响应结果.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleRecommendResponse.Articles">
+            <summary>
+            文章列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleRecommendResponse.Ranks">
+            <summary>
+            排行榜.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Article.Core.Article">
+            <summary>
+            专栏文章.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.Id">
+            <summary>
+            文章Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.Category">
+            <summary>
+            所属标签.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.RelatedCategories">
+            <summary>
+            关联标签列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.Summary">
+            <summary>
+            提要.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.Publisher">
+            <summary>
+            作者.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.PublishTime">
+            <summary>
+            发布时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.CreateTime">
+            <summary>
+            创建时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.Stats">
+            <summary>
+            文章状态参数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.WordCount">
+            <summary>
+            字数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.CoverUrls">
+            <summary>
+            文章封面列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.IsLike">
+            <summary>
+            是否已点赞.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.Article.IsOriginal">
+            <summary>
+            是否为原创，0-非原创，1-原创.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Article.Core.PublisherInfo">
+            <summary>
+            发布者信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.PublisherInfo.Mid">
+            <summary>
+            视频发布者的Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.PublisherInfo.Publisher">
+            <summary>
+            视频发布者.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.PublisherInfo.PublisherAvatar">
+            <summary>
+            视频发布者的头像.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Article.Core.ArticleStats">
+            <summary>
+            文章参数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.ViewCount">
+            <summary>
+            阅读次数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.FavoriteCount">
+            <summary>
+            收藏次数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.LikeCount">
+            <summary>
+            点赞次数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.DislikeCount">
+            <summary>
+            点踩次数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.ReplyCount">
+            <summary>
+            评论数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.ShareCount">
+            <summary>
+            分享次数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.CoinCount">
+            <summary>
+            硬币数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Article.Core.ArticleStats.DynamicCount">
+            <summary>
+            动态转发次数.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelBuilderExtensions">
+            <summary>
+            内核构建器扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddArticleDiscoveryService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加专栏文章服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddArticleOperationService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加文章操作服务.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Single">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseArticleRecommendResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseArticleViewResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseListArticle">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseListArticleCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Article">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleRecommendResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleStats">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleContentResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleTagArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArticleViewResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Author">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Category">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Media">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Official_Verify">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Opus">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusContent">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusLine">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusLinePic">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusNode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusParagraph">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusParagraphFormat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusPic">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusPicture">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusPubInfo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusText">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusTextStyle">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OpusWord">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Readinfo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Stats">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Topic_Info">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Vip">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PublisherInfo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListArticleCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListArticleTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListOpusNode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListOpusParagraph">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListOpusPicture">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListArticle">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListArticleCategory">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.NullableInt64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.StringArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

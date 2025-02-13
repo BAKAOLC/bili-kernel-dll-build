@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Services.Comment</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Services.Comment.CommentService">
+            <summary>
+            评论服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.CommentService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator)">
+            <summary>
+            初始化.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.CommentService.GetCommentsAsync(System.String,Richasy.BiliKernel.Models.CommentTargetType,Richasy.BiliKernel.Models.CommentSortType,System.Int64,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.CommentService.GetDetailCommentsAsync(System.String,Richasy.BiliKernel.Models.CommentTargetType,Richasy.BiliKernel.Models.CommentSortType,System.String,System.Int64,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.CommentService.GetEmotePackagesAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.CommentService.SendTextCommentAsync(System.String,System.String,Richasy.BiliKernel.Models.CommentTargetType,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.CommentService.ToggleLikeAsync(System.Boolean,System.String,System.String,Richasy.BiliKernel.Models.CommentTargetType,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Comment.Core.CommentClient">
+            <summary>
+            评论客户端.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Comment.Core.Models.EmoteResponse">
+            <summary>
+            表情包响应.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.EmoteResponse.Packages">
+            <summary>
+            表情包集合.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmotePackage">
+            <summary>
+            表情包.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmotePackage.Id">
+            <summary>
+            标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmotePackage.Text">
+            <summary>
+            对应文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmotePackage.Url">
+            <summary>
+            图标地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmotePackage.Emotes">
+            <summary>
+            表情集合.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmote">
+            <summary>
+            表情.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmote.Id">
+            <summary>
+            标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmote.PackageId">
+            <summary>
+            表情包标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmote.Text">
+            <summary>
+            文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.Core.Models.BiliEmote.Url">
+            <summary>
+            图标地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.BiliDataResponseEmoteResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.BiliEmote">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.BiliEmotePackage">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.EmoteResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.IListBiliEmote">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.IListBiliEmotePackage">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Comment.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelBuilderExtensions">
+            <summary>
+            内核构建器扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddCommentService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加评论服务.
+            </summary>
+        </member>
+    </members>
+</doc>

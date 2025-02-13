@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Authorizers.TV</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Authorizers.TV.Core.QRCodeStatus">
+            <summary>
+            登录二维码的状态.
+            </summary>
+        </member>
+        <member name="F:Richasy.BiliKernel.Authorizers.TV.Core.QRCodeStatus.Expired">
+            <summary>
+            二维码已过期.
+            </summary>
+        </member>
+        <member name="F:Richasy.BiliKernel.Authorizers.TV.Core.QRCodeStatus.NotConfirm">
+            <summary>
+            需要用户确认.
+            </summary>
+        </member>
+        <member name="F:Richasy.BiliKernel.Authorizers.TV.Core.QRCodeStatus.Success">
+            <summary>
+            已通过验证.
+            </summary>
+        </member>
+        <member name="F:Richasy.BiliKernel.Authorizers.TV.Core.QRCodeStatus.Failed">
+            <summary>
+            授权过程中出现错误.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Authorizers.TV.Core.TVQRCode">
+            <summary>
+            电视端二维码信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authorizers.TV.Core.TVQRCode.Url">
+            <summary>
+            获取二维码数据的地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authorizers.TV.Core.TVQRCode.AuthCode">
+            <summary>
+            验证码.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Authorizers.TV.TVAuthenticationService">
+            <summary>
+            电视端的认证服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authorizers.TV.TVAuthenticationService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Bili.Authorization.IQRCodeResolver,Richasy.BiliKernel.Bili.Authorization.IBiliCookiesResolver,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver,Richasy.BiliKernel.Authenticator.BiliAuthenticator)">
+            <summary>
+            初始化 <see cref="T:Richasy.BiliKernel.Authorizers.TV.TVAuthenticationService"/> 类的新实例.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authorizers.TV.TVAuthenticationService.EnsureTokenAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authorizers.TV.TVAuthenticationService.SignInAsync(Richasy.BiliKernel.Bili.AuthorizeExecutionSettings,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authorizers.TV.TVAuthenticationService.SignOutAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelBuilderExtensions">
+            <summary>
+            内核构建器扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddTVAuthenticationService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加电视端授权器.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.TVQRCode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseTVQRCode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseBiliToken">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliCookies">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliCookiesResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliToken">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListBiliCookies">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

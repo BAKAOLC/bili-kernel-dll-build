@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Adapters.ImageAdapter">
+            <summary>
+            图片适配器，将视频封面、用户头像等转换为 <see cref="T:Richasy.BiliKernel.Models.Appearance.BiliImage"/>.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.ImageAdapter.ToImage(System.String)">
+            <summary>
+            将图片地址转换为 <see cref="T:Richasy.BiliKernel.Models.Appearance.BiliImage"/>.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.ImageAdapter.ToImage(System.String,System.Double)">
+            <summary>
+            根据图片地址及大小信息生成缩略图地址（宽高相等）.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.ImageAdapter.ToImage(System.String,System.Double,System.Double)">
+            <summary>
+            根据图片地址及宽高信息生成缩略图地址.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.ImageAdapter.ToVideoCover(System.String)">
+            <summary>
+            根据图片地址生成适用于视频卡片尺寸的缩略图地址.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.ImageAdapter.ToPgcCover(System.String)">
+            <summary>
+            根据图片尺寸生成适用于专业内容的缩略图.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.ImageAdapter.ToArticleCover(System.String)">
+            <summary>
+            根据图片地址生成适用于文章卡片尺寸的缩略图地址.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Adapters.UserAdapterBase">
+            <summary>
+            用户类型适配器.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Adapters.UserAdapterBase.CreateUserProfile(System.Int64,System.String,System.String,System.Double)">
+            <summary>
+            创建用户资料.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Authenticator.BiliAuthenticator">
+            <summary>
+            授权器，用于对请求进行授权.
+            </summary>
+            <summary>
+            基础授权器.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthenticator.#ctor(Richasy.BiliKernel.Bili.Authorization.IBiliCookiesResolver,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Authenticator.BiliAuthenticator"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthenticator.AuthorizeRestRequest(System.Net.Http.HttpRequestMessage,System.Collections.Generic.Dictionary{System.String,System.String},Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings)">
+            <summary>
+            对 REST Api 请求进行授权.
+            </summary>
+            <param name="request">请求.</param>
+            <param name="parameters">参数.</param>
+            <param name="settings">请求设置.</param>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthenticator.AuthorizeGrpcRequest(System.Net.Http.HttpRequestMessage,System.Boolean)">
+            <summary>
+            对 gRPC 请求进行授权.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthenticator.AuthorizeRequestParameters(System.Collections.Generic.Dictionary{System.String,System.String},Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings)">
+            <summary>
+            生成授权后的请求参数.
+            </summary>
+            <param name="parameters">基础参数.</param>
+            <param name="settings">授权设置.</param>
+            <returns>处理后的参数列表.</returns>
+            <exception cref="T:RichasyKernel.KernelException">令牌获取失败.</exception>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthenticator.GenerateAuthorizedQueryString(System.Collections.Generic.Dictionary{System.String,System.String},Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings)">
+            <summary>
+            生成授权后的查询字符串.
+            </summary>
+            <param name="parameters">基础参数.</param>
+            <param name="settings">授权设置.</param>
+            <returns>字符串.</returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthenticator.InitializeWbiAsync(System.Threading.CancellationToken)">
+            <summary>
+            初始化 Wbi.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Authenticator.BiliAuthenticator.WebNavResponse">
+            <summary>
+            网页导航响应.
+            </summary>
+            <remarks>
+            https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md.
+            </remarks>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthenticator.WebNavResponse.Img">
+            <summary>
+            未知.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Authenticator.BiliAuthenticator.WebNavResponse.WbiImage">
+            <summary>
+            Wbi image.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthenticator.WebNavResponse.WbiImage.ImgUrl">
+            <summary>
+            未知.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthenticator.WebNavResponse.WbiImage.SubUrl">
+            <summary>
+            未知.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings">
+            <summary>
+            哔哩授权执行设置.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.#ctor(Richasy.BiliKernel.Models.BiliApiType,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.ApiType">
+            <summary>
+            设备类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.RequireToken">
+            <summary>
+            是否需要Token.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.ForceNoToken">
+            <summary>
+            是否强制不使用Token.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.RequireCookie">
+            <summary>
+            是否需要Cookie.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.OnlyUseAppKey">
+            <summary>
+            是否仅使用AppKey.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.NeedRID">
+            <summary>
+            是否需要RID.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.NeedCSRF">
+            <summary>
+            是否需要CSRF.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Authenticator.BiliAuthorizeExecutionSettings.AdditionalQuery">
+            <summary>
+            附加查询参数.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Content.BiliResponse">
+            <summary>
+            BiliBili 响应结构.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponse.Code">
+            <summary>
+            响应代码.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponse.Message">
+            <summary>
+            响应消息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponse.TTL">
+            <summary>
+            TTL.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Content.BiliResponse.IsSuccess">
+            <summary>
+            响应是否表示成功.
+            </summary>
+            <returns>结果.</returns>
+        </member>
+        <member name="T:Richasy.BiliKernel.Content.BiliDataResponse`1">
+            <summary>
+            哔哩哔哩数据响应结构.
+            </summary>
+            <typeparam name="T">数据类型.</typeparam>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliDataResponse`1.Data">
+            <summary>
+            数据.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Content.BiliResultResponse`1">
+            <summary>
+            哔哩哔哩结果响应结构.
+            </summary>
+            <typeparam name="T">结果类型.</typeparam>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResultResponse`1.Result">
+            <summary>
+            结果.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Content.BiliResponseContext">
+            <summary>
+            序列化上下文.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponseContext.BiliResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponseContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponseContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponseContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Content.BiliResponseContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Content.BiliResponseContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Content.BiliResponseContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Content.BiliResponseContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Http.BiliHttpClient">
+            <summary>
+            BiliBili 网络请求客户端.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Http.BiliHttpClient"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.CreateRequest(System.Net.Http.HttpMethod,System.Uri)">
+            <summary>
+            创建一个请求.
+            </summary>
+            <param name="method">请求方法.</param>
+            <param name="uri">请求地址.</param>
+            <returns><see cref="T:System.Net.Http.HttpRequestMessage"/>.</returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.CreateRequest(System.Uri,Google.Protobuf.IMessage)">
+            <summary>
+            创建一个 GRPC 请求.
+            </summary>
+            <param name="uri">请求地址.</param>
+            <param name="grpcMessage">消息结构体.</param>
+            <returns>请求信息.</returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            发送请求.
+            </summary>
+            <param name="request">请求信息.</param>
+            <param name="cancellationToken">终止令牌.</param>
+            <returns>响应结果.</returns>
+            <exception cref="T:RichasyKernel.KernelException"></exception>
+            <exception cref="T:RichasyKernel.KernelException"></exception>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.GetStringAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            直接获取字符串.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.ParseAsync``1(System.Net.Http.HttpResponseMessage,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0})">
+            <summary>
+            从响应中获取数据.
+            </summary>
+            <typeparam name="T">数据类型.</typeparam>
+            <param name="response">响应.</param>
+            <param name="deserializeContext">反序列化上下文（用于AOT）.</param>
+            <returns><see cref="T:System.Threading.Tasks.Task`1"/></returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.ParseAsync``1(System.Net.Http.HttpResponseMessage,Google.Protobuf.MessageParser{``0})">
+            <summary>
+            从 Protobuf 响应中获取数据.
+            </summary>
+            <typeparam name="T">数据类型.</typeparam>
+            <param name="response">响应.</param>
+            <param name="parser">解析器.</param>
+            <returns><see cref="T:System.Threading.Tasks.Task`1"/></returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.BiliHttpClient.GetCookiesFromResponse(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            从响应中获取 Cookie.
+            </summary>
+            <param name="response">响应结果.</param>
+            <returns>Cookie 列表.</returns>
+        </member>
+        <member name="T:Richasy.BiliKernel.Http.Buvid">
+            <summary>
+            BUVID.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.Buvid.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Http.Buvid"/> class.
+            </summary>
+            <param name="macAddress">MAC 地址.</param>
+        </member>
+        <member name="M:Richasy.BiliKernel.Http.Buvid.Generate">
+            <summary>
+            生成 buvid.
+            </summary>
+            <returns>buvid.</returns>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelExtensions">
+            <summary>
+            内核扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelExtensions.AddBiliClient(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加基础Bili客户端.
+            </summary>
+            <param name="builder">内核构建器.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelExtensions.AddBiliAuthenticator(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加Bili认证器.
+            </summary>
+            <param name="builder">内核构建器.</param>
+            <returns><see cref="T:RichasyKernel.IKernelBuilder"/>.</returns>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.WebNavResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.WbiImage">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseWebNavResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

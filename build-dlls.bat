@@ -1,0 +1,10 @@
+dotnet build bili-kernel\src\Authorizers\Authorizers.Tv\Authorizers.Tv.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\BiliKernel.Abstractions\BiliKernel.Abstractions.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\BiliKernel.Core\BiliKernel.Core.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\BiliKernel.Grpc\BiliKernel.Grpc.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\Services\Services.Article\Services.Article.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\Services\Services.Comment\Services.Comment.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\Services\Services.Media\Services.Media.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\Services\Services.Moment\Services.Moment.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\Services\Services.Search\Services.Search.csproj -c Release -o .\bin
+dotnet build bili-kernel\src\Services\Services.User\Services.User.csproj -c Release -o .\bin

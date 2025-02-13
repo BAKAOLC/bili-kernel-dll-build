@@ -1,0 +1,3391 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Richasy.BiliKernel.Services.Media</name>
+    </assembly>
+    <members>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.BuvidResponse">
+            <summary>
+            BUVID 响应.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.BuvidResponse.B3">
+            <summary>
+            B3 文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.BuvidResponse.B4">
+            <summary>
+            B4 文本.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistResponse">
+            <summary>
+            推荐视频的响应.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistResponse.Items">
+            <summary>
+            推荐视频列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo">
+            <summary>
+            客户端精选视频.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.AvId">
+            <summary>
+            Avid.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.BvId">
+            <summary>
+            Bvid.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Cid">
+            <summary>
+            分集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Goto">
+            <summary>
+            视频类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Link">
+            <summary>
+            视频链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Cover">
+            <summary>
+            封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Duration">
+            <summary>
+            时长 (秒).
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.PublishTime">
+            <summary>
+            发布时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Owner">
+            <summary>
+            发布者.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.Stat">
+            <summary>
+            状态.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistVideo.RecommendReason">
+            <summary>
+            推荐原因.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistReason">
+            <summary>
+            网页推荐原因.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.CuratedPlaylistReason.Content">
+            <summary>
+            推荐原因.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.EpisodeInteractionResponse">
+            <summary>
+            分集交互信息（包括用户投币，点赞，收藏等信息）.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.EpisodeInteractionResponse.CoinNumber">
+            <summary>
+            投币数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.EpisodeInteractionResponse.IsFavorite">
+            <summary>
+            是否收藏.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.EpisodeInteractionResponse.IsLike">
+            <summary>
+            是否点赞.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayResponse">
+            <summary>
+            直播播放信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayResponse.RoomId">
+            <summary>
+            直播间Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayResponse.UserId">
+            <summary>
+            用户Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayResponse.LiveStatus">
+            <summary>
+            直播状态，1表示正在直播.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayResponse.LiveTime">
+            <summary>
+            直播时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayResponse.PlayUrlInfo">
+            <summary>
+            播放信息.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayUrlInfo">
+            <summary>
+            直播播放地址信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayUrlInfo.PlayUrl">
+            <summary>
+            播放信息.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayData">
+            <summary>
+            直播播放链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayData.Cid">
+            <summary>
+            直播间Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayData.Descriptions">
+            <summary>
+            清晰度列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayData.StreamList">
+            <summary>
+            播放流.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppQualityDescription">
+            <summary>
+            清晰度描述.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppQualityDescription.Quality">
+            <summary>
+            清晰度标识.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppQualityDescription.Description">
+            <summary>
+            描述.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppQualityDescription.HDRSign">
+            <summary>
+            HDR 标识.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayStream">
+            <summary>
+            直播播放流.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayStream.ProtocolName">
+            <summary>
+            协议名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayStream.FormatList">
+            <summary>
+            格式列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayFormat">
+            <summary>
+            直播播放格式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayFormat.FormatName">
+            <summary>
+            格式名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayFormat.CodecList">
+            <summary>
+            分区Id.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec">
+            <summary>
+            直播播放解码信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec.CodecName">
+            <summary>
+            解码名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec.CurrentQuality">
+            <summary>
+            当前清晰度标识.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec.AcceptQualities">
+            <summary>
+            支持的清晰度.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec.BaseUrl">
+            <summary>
+            基础链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec.Urls">
+            <summary>
+            播放地址列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayCodec.DolbyType">
+            <summary>
+            杜比类型，0-关闭, 1-开启.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayUrl">
+            <summary>
+            直播播放地址拼接信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayUrl.Host">
+            <summary>
+            域名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayUrl.Extra">
+            <summary>
+            后缀.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAppPlayUrl.StreamTTL">
+            <summary>
+            流的有效时间，通常为1个小时.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailResponse">
+            <summary>
+            直播间分区详情响应结果.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailResponse.Tags">
+            <summary>
+            子标签.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailResponse.Count">
+            <summary>
+            总数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailResponse.List">
+            <summary>
+            直播间列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag">
+            <summary>
+            直播间详情的子标签.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.Id">
+            <summary>
+            标签Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.Name">
+            <summary>
+            标签名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.SortType">
+            <summary>
+            排序方式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.Type">
+            <summary>
+            类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.Sort">
+            <summary>
+            排序.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaDetailTag.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaGroup.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.Models.LiveAreaGroup.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuResponse">
+            <summary>
+            直播弹幕响应.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuResponse.Group">
+            <summary>
+            分组.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuResponse.BusinessId">
+            <summary>
+            业务ID.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveMessageBase">
+            <summary>
+            直播套接字消息基类.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage">
+            <summary>
+            直播弹幕消息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.Text">
+            <summary>
+            文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.UserName">
+            <summary>
+            用户名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.Level">
+            <summary>
+            用户等级.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.LevelColor">
+            <summary>
+            等级颜色.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.UserTitle">
+            <summary>
+            用户头衔.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.VipText">
+            <summary>
+            会员文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.MedalName">
+            <summary>
+            勋章名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.MedalLevel">
+            <summary>
+            勋章等级.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.MedalColor">
+            <summary>
+            勋章颜色.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.IsAdmin">
+            <summary>
+            是否为管理员.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.IsVip">
+            <summary>
+            是否为老爷.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.IsBigVip">
+            <summary>
+            是否为年费老爷.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.HasMedal">
+            <summary>
+            是否有徽章.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.HasTitle">
+            <summary>
+            是否有头衔.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.UserNameColor">
+            <summary>
+            用户名颜色.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveDanmakuMessage.ContentColor">
+            <summary>
+            内容颜色.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage">
+            <summary>
+            直播礼物消息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.UserName">
+            <summary>
+            用户名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.GiftName">
+            <summary>
+            礼物名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.Action">
+            <summary>
+            动作.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.TotalNumber">
+            <summary>
+            个数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.GiftId">
+            <summary>
+            礼物Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.UserId">
+            <summary>
+            用户Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveGiftMessage.Gif">
+            <summary>
+            动图.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveWelcomeMessage">
+            <summary>
+            直播欢迎消息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveWelcomeMessage.UserName">
+            <summary>
+            动图.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveWelcomeMessage.UserId">
+            <summary>
+            用户Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveWelcomeMessage.Vip">
+            <summary>
+            是否为老爷.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomDetailResponse">
+            <summary>
+            直播间详情.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomDetailResponse.RoomInformation">
+            <summary>
+            房间信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomDetailResponse.AnchorInformation">
+            <summary>
+            锚点信息.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation">
+            <summary>
+            直播间信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.UserId">
+            <summary>
+            用户Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.RoomId">
+            <summary>
+            直播间Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.Cover">
+            <summary>
+            封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.Tags">
+            <summary>
+            标签.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.Description">
+            <summary>
+            描述文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.ViewerCount">
+            <summary>
+            在线观看人数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.LiveStatus">
+            <summary>
+            直播状态：0-未开播，1-正在直播，2-轮播.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.LiveStartTime">
+            <summary>
+            直播开始时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.LockStatus">
+            <summary>
+            直播间封禁状态，0-未封禁，1-已封禁.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.LockTime">
+            <summary>
+            封禁时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.HiddenStatus">
+            <summary>
+            隐藏状态，0-未隐藏，1-已隐藏.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.HiddenTime">
+            <summary>
+            隐藏时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.AreaId">
+            <summary>
+            所属区域Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.AreaName">
+            <summary>
+            所属区域名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.ParentAreaId">
+            <summary>
+            父分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.ParentAreaName">
+            <summary>
+            父分区名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.Keyframe">
+            <summary>
+            关键帧（截图）.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRoomInformation.SpecialFollowType">
+            <summary>
+            特别关注类型，0-非特别关注，1-特别关注.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveAnchorInformation">
+            <summary>
+            直播间锚点信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAnchorInformation.UserBasicInformation">
+            <summary>
+            房主基本信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAnchorInformation.LevelInformation">
+            <summary>
+            直播等级信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAnchorInformation.RelationInformation">
+            <summary>
+            直播关注信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveAnchorInformation.MedalInformation">
+            <summary>
+            勋章信息.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveUserBasicInformation">
+            <summary>
+            直播用户基本信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveUserBasicInformation.UserName">
+            <summary>
+            用户名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveUserBasicInformation.Avatar">
+            <summary>
+            用户头像.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveUserBasicInformation.Gender">
+            <summary>
+            性别.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveLevelInformation">
+            <summary>
+            直播等级信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveLevelInformation.Level">
+            <summary>
+            等级.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveRelationInformation">
+            <summary>
+            直播关注信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveRelationInformation.AttentionCount">
+            <summary>
+            关注人数.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.LiveMedalInformation">
+            <summary>
+            直播勋章信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.LiveMedalInformation.Name">
+            <summary>
+            勋章名.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse">
+            <summary>
+            PGC内容详情.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Actor">
+            <summary>
+            演员表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Alias">
+            <summary>
+            昵称，假名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Areas">
+            <summary>
+            所属地区.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.BadgeText">
+            <summary>
+            徽章文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Cover">
+            <summary>
+            封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.DynamicSubtitle">
+            <summary>
+            动态副标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Evaluate">
+            <summary>
+            评价，说明文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Link">
+            <summary>
+            网址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.MediaId">
+            <summary>
+            媒体Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Mode">
+            <summary>
+            模式，用途不明.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Modules">
+            <summary>
+            模块.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.OriginName">
+            <summary>
+            原名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.PublishInformation">
+            <summary>
+            发布信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.SeasonId">
+            <summary>
+            剧集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.SeasonTitle">
+            <summary>
+            剧集标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Series">
+            <summary>
+            系列.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.ShareTitle">
+            <summary>
+            分享标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.ShareUrl">
+            <summary>
+            分享链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.ShortLink">
+            <summary>
+            短链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.SquareCover">
+            <summary>
+            矩形封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Staff">
+            <summary>
+            参与人员，制作信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.InformationStat">
+            <summary>
+            详情互动数据（包括投币数，观看数等）.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Status">
+            <summary>
+            状态（数值含义不明）.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.IndexList">
+            <summary>
+            索引筛选列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Subtitle">
+            <summary>
+            副标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.TotalCount">
+            <summary>
+            总集数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Type">
+            <summary>
+            类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.TypeDescription">
+            <summary>
+            类型说明.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.TypeName">
+            <summary>
+            类型名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.UserStatus">
+            <summary>
+            用户状态，包括是否已追番及播放进度等.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.ActivityTab">
+            <summary>
+            动态标签页.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Rating">
+            <summary>
+            评分.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Celebrity">
+            <summary>
+            演职人员.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailResponse.Warning">
+            <summary>
+            警示信息.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcPlayerDialog">
+            <summary>
+            播放器警告.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPlayerDialog.Code">
+            <summary>
+            警告代号.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPlayerDialog.Message">
+            <summary>
+            警告信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPlayerDialog.Type">
+            <summary>
+            警告类型.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation">
+            <summary>
+            发布详情.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.IsFinish">
+            <summary>
+            是否已完结，0-未完结，1-已完结.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.IsStarted">
+            <summary>
+            是否已开始连载.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.PublishTime">
+            <summary>
+            发布时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.DisplayPublishTime">
+            <summary>
+            显示的可读发布时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.DisplayReleaseDate">
+            <summary>
+            显示的可读发布日期.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.DisplayProgress">
+            <summary>
+            显示的连载进度.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcPublishInformation.UnknowPublishDate">
+            <summary>
+            未知发布时间. 0-已知，1-未知.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail">
+            <summary>
+            PGC单集信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Aid">
+            <summary>
+            视频Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.BvId">
+            <summary>
+            BV Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.PartId">
+            <summary>
+            分P Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Cover">
+            <summary>
+            封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Duration">
+            <summary>
+            时长.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Index">
+            <summary>
+            分集索引.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Id">
+            <summary>
+            分集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Link">
+            <summary>
+            网址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.LongTitle">
+            <summary>
+            长标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.PublishTime">
+            <summary>
+            发布时间（秒）.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.IsPV">
+            <summary>
+            是否为PV？ 0-不是，1-是.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.SectionIndex">
+            <summary>
+            当前分块内的索引.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.ShareTitle">
+            <summary>
+            分享标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.ShareUrl">
+            <summary>
+            分享链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.ShortLink">
+            <summary>
+            短链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Status">
+            <summary>
+            状态.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Subtitle">
+            <summary>
+            副标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Report">
+            <summary>
+            报告信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.BadgeText">
+            <summary>
+            徽章文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeDetail.Stat">
+            <summary>
+            单集社区信息.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeries">
+            <summary>
+            PGC系列.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeries.Id">
+            <summary>
+            系列Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeries.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcUserStatus">
+            <summary>
+            PGC内容的用户交互数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcUserStatus.IsFollow">
+            <summary>
+            是否已关注/追番. 0-没有，1-已追.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcUserStatus.Pay">
+            <summary>
+            付费状态. 0-未付费，1-已付费.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcUserStatus.Progress">
+            <summary>
+            播放历史记录.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcUserStatus.IsVip">
+            <summary>
+            是否需要大会员. 0-不需要，1-需要.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcStaff">
+            <summary>
+            PGC内容制作人员信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcStaff.Information">
+            <summary>
+            内容.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcStaff.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat">
+            <summary>
+            PGC详情信息的社区数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.CoinCount">
+            <summary>
+            投币数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.DanmakuCount">
+            <summary>
+            弹幕数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.FavoriteCount">
+            <summary>
+            单集收藏数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.SeriesFavoriteCount">
+            <summary>
+            系列追番/收藏数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.FollowerDisplayText">
+            <summary>
+            追番/收藏显示文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.LikeCount">
+            <summary>
+            点赞数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.PlayDisplayText">
+            <summary>
+            播放量显示文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.ReplyCount">
+            <summary>
+            回复数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.ShareCount">
+            <summary>
+            分享数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcInformationStat.PlayCount">
+            <summary>
+            播放次数.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeStat">
+            <summary>
+            PGC单集的社区数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeStat.CoinCount">
+            <summary>
+            投币数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeStat.DanmakuCount">
+            <summary>
+            弹幕数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeStat.LikeCount">
+            <summary>
+            点赞数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeStat.PlayCount">
+            <summary>
+            播放量.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcEpisodeStat.ReplyCount">
+            <summary>
+            回复数.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcProgress">
+            <summary>
+            PGC内容历史记录.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcProgress.LastEpisodeId">
+            <summary>
+            最后一次播放的单集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcProgress.LastEpisodeIndex">
+            <summary>
+            最后一次播放的单集索引.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcProgress.LastTime">
+            <summary>
+            播放进度（秒）.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcActivityTab">
+            <summary>
+            PGC动态标签.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcActivityTab.Id">
+            <summary>
+            标签Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcActivityTab.Link">
+            <summary>
+            网址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcActivityTab.DisplayName">
+            <summary>
+            显示名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcActivityTab.Title">
+            <summary>
+            全称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcActivityTab.Type">
+            <summary>
+            类别（目前仅处理101）.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcRating">
+            <summary>
+            PGC内容评分.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcRating.Count">
+            <summary>
+            评分人数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcRating.Score">
+            <summary>
+            综合评分.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcArea">
+            <summary>
+            PGC内容所属地区.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcArea.Id">
+            <summary>
+            地区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcArea.Name">
+            <summary>
+            属地名称.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModule">
+            <summary>
+            PGC详情的模块.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModule.Data">
+            <summary>
+            数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModule.Id">
+            <summary>
+            未知发布时间. 0-已知，1-未知.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModule.Style">
+            <summary>
+            样式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModule.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModuleData">
+            <summary>
+            PGC详情模块数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModuleData.Episodes">
+            <summary>
+            剧集列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModuleData.Seasons">
+            <summary>
+            关联系列.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcDetailModuleData.Id">
+            <summary>
+            模块Id.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason">
+            <summary>
+            PGC剧集系列.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.Badge">
+            <summary>
+            徽章文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.Cover">
+            <summary>
+            封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.IsNew">
+            <summary>
+            是否是最新. 0-不是，1-是.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.Link">
+            <summary>
+            网址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.SeasonId">
+            <summary>
+            剧集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.SeasonTitle">
+            <summary>
+            剧集标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcSeason.Title">
+            <summary>
+            标题全称.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcIndex">
+            <summary>
+            PGC关联索引.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcIndex.Id">
+            <summary>
+            Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcIndex.Name">
+            <summary>
+            名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcIndex.Url">
+            <summary>
+            导航地址.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcCelebrity">
+            <summary>
+            演职人员.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcCelebrity.Avatar">
+            <summary>
+            头像.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcCelebrity.Description">
+            <summary>
+            说明.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcCelebrity.Id">
+            <summary>
+            演职员Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcCelebrity.Name">
+            <summary>
+            演职员姓名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcCelebrity.ShortDescription">
+            <summary>
+            简短介绍.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport">
+            <summary>
+            PGC模块报告数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.Aid">
+            <summary>
+            Aid.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.EpisodeTitle">
+            <summary>
+            分集标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.EpisodeId">
+            <summary>
+            分集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.SeasonId">
+            <summary>
+            剧集Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.SeasonType">
+            <summary>
+            剧集类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.SectionId">
+            <summary>
+            分块Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PgcModuleReport.SectionType">
+            <summary>
+            分块类型.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation">
+            <summary>
+            Dash播放信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.Quality">
+            <summary>
+            视频清晰度.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.Format">
+            <summary>
+            当前视频格式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.Duration">
+            <summary>
+            视频时长.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.AcceptDescription">
+            <summary>
+            支持的清晰度说明文本列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.AcceptQualities">
+            <summary>
+            支持的清晰度列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.CodecId">
+            <summary>
+            视频编码Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.VideoInformation">
+            <summary>
+            Dash视频播放信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.FlvInformation">
+            <summary>
+            Flv视频播放信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.PlayerInformation.SupportFormats">
+            <summary>
+            支持的视频格式列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.DashVideo">
+            <summary>
+            Dash视频信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashVideo.Duration">
+            <summary>
+            视频时长.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashVideo.MinBufferTime">
+            <summary>
+            最低缓冲时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashVideo.Video">
+            <summary>
+            不同清晰度的视频列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashVideo.Audio">
+            <summary>
+            不同码率的音频列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.DashItem">
+            <summary>
+            Dash条目.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.Id">
+            <summary>
+            Dash Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.BaseUrl">
+            <summary>
+            基链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.BackupUrl">
+            <summary>
+            备份链接.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.BandWidth">
+            <summary>
+            媒体要求的带宽.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.MimeType">
+            <summary>
+            媒体格式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.Codecs">
+            <summary>
+            媒体编码.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.Width">
+            <summary>
+            媒体宽度.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.Height">
+            <summary>
+            媒体高度.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.FrameRate">
+            <summary>
+            帧率.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.Scale">
+            <summary>
+            播放比例.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.SegmentBase">
+            <summary>
+            分段的基础信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.DashItem.CodecId">
+            <summary>
+            编码Id.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.SegmentBase">
+            <summary>
+            分段基础信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SegmentBase.Initialization">
+            <summary>
+            起始位置.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SegmentBase.IndexRange">
+            <summary>
+            索引范围.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.VideoFormat">
+            <summary>
+            支持的格式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.VideoFormat.Quality">
+            <summary>
+            清晰度标识.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.VideoFormat.Format">
+            <summary>
+            格式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.VideoFormat.Description">
+            <summary>
+            显示的说明文本.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.VideoFormat.Superscript">
+            <summary>
+            上标.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.FlvItem">
+            <summary>
+            FLV视频条目.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.FlvItem.Order">
+            <summary>
+            序号.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.FlvItem.Length">
+            <summary>
+            时长.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.FlvItem.Size">
+            <summary>
+            大小.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.FlvItem.Url">
+            <summary>
+            播放地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.FlvItem.BackupUrls">
+            <summary>
+            备用地址列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleDetailResponse">
+            <summary>
+            字幕详情响应结果.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleDetailResponse.Body">
+            <summary>
+            字幕列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleItem">
+            <summary>
+            字幕条目.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleItem.From">
+            <summary>
+            开始时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleItem.To">
+            <summary>
+            结束时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleItem.Content">
+            <summary>
+            字幕内容.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexResponse">
+            <summary>
+            字幕索引响应结果.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexResponse.AllowSubmit">
+            <summary>
+            支持提交.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexResponse.Subtitles">
+            <summary>
+            字幕索引列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexItem">
+            <summary>
+            字幕索引条目.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexItem.Id">
+            <summary>
+            字幕Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexItem.Language">
+            <summary>
+            语言代码.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexItem.DisplayLanguage">
+            <summary>
+            显示语言.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexItem.Url">
+            <summary>
+            字幕地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.Models.SubtitleIndexItem.Type">
+            <summary>
+            字幕类型.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveFeedResponse">
+            <summary>
+            直播源列表响应类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedResponse.CardList">
+            <summary>
+            直播源卡片列表.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveFeedCard">
+            <summary>
+            直播源卡片.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedCard.CardType">
+            <summary>
+            直播卡片类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedCard.CardData">
+            <summary>
+            卡片数据.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveFeedCardData">
+            <summary>
+            直播源卡片数据.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedCardData.FollowList">
+            <summary>
+            我关注的用户列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedCardData.LiveCard">
+            <summary>
+            直播卡片.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom">
+            <summary>
+            直播源推荐中我关注的直播间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.RoomId">
+            <summary>
+            直播间Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.UserName">
+            <summary>
+            用户名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.UserAvatar">
+            <summary>
+            用户头像.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.LiveStartTime">
+            <summary>
+            直播开始时间.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.AreaId">
+            <summary>
+            分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.AreaName">
+            <summary>
+            分区名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.ParentAreaName">
+            <summary>
+            父分区名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.ParentAreaId">
+            <summary>
+            父分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.LiveTagName">
+            <summary>
+            直播标签名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.SpecialAttention">
+            <summary>
+            是否为特别关注，0-否，1-是.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedRoom.OfficialVerify">
+            <summary>
+            是否官方认证，0-否，1-是.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard">
+            <summary>
+            直播间卡片.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.RoomId">
+            <summary>
+            直播间Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.AreaId">
+            <summary>
+            所属分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.AreaName">
+            <summary>
+            显示分区名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.ParentAreaId">
+            <summary>
+            父分区Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.ParentAreaName">
+            <summary>
+            父分区名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.CoverLeftContent">
+            <summary>
+            封面左侧文本，指用户名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.CoverRightContent">
+            <summary>
+            封面右侧文本，指观看人数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.Feedback">
+            <summary>
+            反馈列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.Index">
+            <summary>
+            序号.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.IsHideFeedback">
+            <summary>
+            是否隐藏反馈.0-不隐藏，1-隐藏.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveCoverContent">
+            <summary>
+            封面内容样式.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveCoverContent.Text">
+            <summary>
+            封面文本.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback">
+            <summary>
+            反馈.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.Title">
+            <summary>
+            标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.Subtitle">
+            <summary>
+            副标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.Type">
+            <summary>
+            类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.Reasons">
+            <summary>
+            理由集合.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.LiveFeedbackReason">
+            <summary>
+            直播反馈理由.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.LiveFeedbackReason.Id">
+            <summary>
+            标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.LiveFeedbackReason.Name">
+            <summary>
+            名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomCard.LiveFeedback.LiveFeedbackReason.IdType">
+            <summary>
+            Id类型.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveFeedFollowUserList">
+            <summary>
+            直播源关注用户列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveFeedFollowUserList.List">
+            <summary>
+            列表数据.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase">
+            <summary>
+            直播间基类.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.UserId">
+            <summary>
+            用户Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.Cover">
+            <summary>
+            直播间封面.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.Title">
+            <summary>
+            直播间标题.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.QualityDescriptionList">
+            <summary>
+            清晰度描述列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.SessionId">
+            <summary>
+            会话标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.GroupId">
+            <summary>
+            分组标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.ViewerCount">
+            <summary>
+            在线观看人数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.PlayUrl">
+            <summary>
+            播放地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.H265PlayUrl">
+            <summary>
+            H265播放地址.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.CurrentQuality">
+            <summary>
+            当前清晰度.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.PkId">
+            <summary>
+            对决的直播间Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveRoomBase.Link">
+            <summary>
+            直播间地址.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.LiveQualityDescription">
+            <summary>
+            直播清晰度说明.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveQualityDescription.Quality">
+            <summary>
+            清晰度标识.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.LiveQualityDescription.Description">
+            <summary>
+            清晰度说明.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.LiveQualityDescription.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.LiveQualityDescription.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.PublisherInfo">
+            <summary>
+            发布者信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.PublisherInfo.UserId">
+            <summary>
+            视频发布者的Id.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.PublisherInfo.Publisher">
+            <summary>
+            视频发布者.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.PublisherInfo.PublisherAvatar">
+            <summary>
+            视频发布者的头像.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.SubPartition">
+            <summary>
+            子分区类型定义.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.SubPartition.RecommendVideos">
+            <summary>
+            推荐视频列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.SubPartition.NewVideos">
+            <summary>
+            新的视频列表.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.SubPartition.TopOffsetId">
+            <summary>
+            向上刷新的标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.SubPartition.BottomOffsetId">
+            <summary>
+            向下刷新的标识符.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.VideoPartition">
+            <summary>
+            分区类型.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoPartition.Tid">
+            <summary>
+            分区的标识符.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoPartition.Name">
+            <summary>
+            分区名称.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoPartition.Logo">
+            <summary>
+            分区图标.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoPartition.Uri">
+            <summary>
+            分区指向的链接.
+            </summary>
+            <remarks>
+            该链接指向的是移动端的跳转链接，这里仅用作分析，不支持跳转.
+            </remarks>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoPartition.Children">
+            <summary>
+            分区子项.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoPartition.IsBangumi">
+            <summary>
+            是否是动漫分区.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.VideoPartition.IsNeedToShow">
+            <summary>
+            判断该分区是否需要显示.
+            </summary>
+            <remarks>
+            部分分区是以H5页面的形式呈现，部分分区是广告，此处仅显示以视频为主的常规分区.
+            </remarks>
+            <returns>分区是否需要显示.</returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.VideoPartition.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.VideoPartition.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo">
+            <summary>
+            视频状态信息.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.Aid">
+            <summary>
+            视频的Aid.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.PlayCount">
+            <summary>
+            视频播放数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.DanmakuCount">
+            <summary>
+            弹幕数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.ReplyCount">
+            <summary>
+            视频评论数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.FavoriteCount">
+            <summary>
+            视频收藏数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.CoinCount">
+            <summary>
+            投币数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.ShareCount">
+            <summary>
+            分享数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.CurrentRanking">
+            <summary>
+            当前排名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.HistoryRanking">
+            <summary>
+            历史最高排名.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.LikeCount">
+            <summary>
+            点赞数.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.Services.Media.Core.VideoStatusInfo.DislikeCount">
+            <summary>
+            点踩数.
+            </summary>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.Core.PgcClient">
+            <summary>
+            动漫客户端.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.PlayerClient.EncodeLiveData(System.String,System.Int32)">
+            <summary>
+            对数据进行编码.
+            </summary>
+            <param name="msg">文本内容.</param>
+            <param name="action">2=心跳，7=进房.</param>
+            <returns>编码后的数据.</returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.Core.PlayerClient.DecompressData(System.Byte[])">
+            <summary>
+            解压直播数据.
+            </summary>
+            <param name="data">数据.</param>
+            <returns>解压后的数据.</returns>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.DanmakuService">
+            <summary>
+            弹幕服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.DanmakuService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Media.DanmakuService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.DanmakuService.GetSegmentDanmakusAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.DanmakuService.SendLiveDanmakuAsync(System.String,System.String,System.String,System.Boolean,Richasy.BiliKernel.Models.DanmakuLocation,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.DanmakuService.SendVideoDanmakuAsync(System.String,System.String,System.String,System.Int32,System.String,System.Boolean,Richasy.BiliKernel.Models.DanmakuLocation,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService">
+            <summary>
+            电影/电视剧/纪录片服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.GetBangumiTimelineAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.GetDomesticTimelineAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.GetIndexFiltersAsync(Richasy.BiliKernel.Models.EntertainmentType,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.GetIndexSeasonsWithFiltersAsync(Richasy.BiliKernel.Models.EntertainmentType,System.Collections.Generic.Dictionary{Richasy.BiliKernel.Models.Appearance.Filter,Richasy.BiliKernel.Models.Appearance.Condition},System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.FollowAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.EntertainmentDiscoveryService.UnfollowAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.LiveDiscoveryService">
+            <summary>
+            直播分区服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.LiveDiscoveryService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Media.LiveDiscoveryService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.LiveDiscoveryService.GetLivePartitionsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.LiveDiscoveryService.GetPartitionLiveListAsync(Richasy.BiliKernel.Models.Partition,Richasy.BiliKernel.Models.Media.LiveTag,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.LiveDiscoveryService.GetFeedAsync(System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.PlayerService">
+            <summary>
+            播放器服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Media.PlayerService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetVideoPageDetailAsync(Richasy.BiliKernel.Models.Media.MediaIdentifier,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetVideoPlayDetailAsync(Richasy.BiliKernel.Models.Media.MediaIdentifier,System.Int64,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetLivePageDetailAsync(Richasy.BiliKernel.Models.Media.MediaIdentifier,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetLivePlayDetailAsync(Richasy.BiliKernel.Models.Media.MediaIdentifier,System.Int32,System.Boolean,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetPgcPageDetailAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetPgcPlayDetailAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetOnlineViewerAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.ToggleVideoLikeAsync(System.String,System.Boolean,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.CoinVideoAsync(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.FavoriteVideoAsync(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.FavoriteEpisodeAsync(System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.TripleVideoAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.ReportVideoProgressAsync(System.String,System.String,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.ReportEpisodeProgressAsync(System.String,System.String,System.String,System.String,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetEpisodeOperationInformationAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.EnterLiveRoomAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.SendLiveHeartBeatAsync(System.Net.WebSockets.ClientWebSocket,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.SendLiveMessageAsync(System.Net.WebSockets.ClientWebSocket,System.Object,System.Int32,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.PlayerService.GetLiveSocketMessagesAsync(System.Net.WebSockets.ClientWebSocket,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.SubtitleService">
+            <summary>
+            字幕服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.SubtitleService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Media.SubtitleService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.SubtitleService.GetSubtitleDetailAsync(Richasy.BiliKernel.Models.Subtitle.SubtitleMeta,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.SubtitleService.GetSubtitleMetasAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.Services.Media.VideoDiscoveryService">
+            <summary>
+            视频分区服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.#ctor(Richasy.BiliKernel.Http.BiliHttpClient,Richasy.BiliKernel.Authenticator.BiliAuthenticator,Richasy.BiliKernel.Bili.Authorization.IBiliTokenResolver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Richasy.BiliKernel.Services.Media.VideoDiscoveryService"/> class.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetVideoPartitionsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetPartitionRankingListAsync(Richasy.BiliKernel.Models.Partition,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetPartitionRecommendVideoListAsync(Richasy.BiliKernel.Models.Partition,System.Int64,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetChildPartitionVideoListAsync(Richasy.BiliKernel.Models.Partition,System.Int64,System.Int32,Richasy.BiliKernel.Models.PartitionVideoSortType,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetCuratedPlaylistAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetGlobalRankingListAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetHotVideoListAsync(System.Int64,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.Services.Media.VideoDiscoveryService.GetRecommendVideoListAsync(System.Int64,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Richasy.BiliKernel.KernelBuilderExtensions">
+            <summary>
+            内核构建器扩展.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddVideoDiscoveryService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加视频探索服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddLiveDiscoveryService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加直播探索服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddEntertainmentDiscoveryService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加动漫/电影/电视剧/纪录片服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddPlayerService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加播放服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddDanmakuService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加弹幕服务.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.KernelBuilderExtensions.AddSubtitleService(RichasyKernel.IKernelBuilder)">
+            <summary>
+            添加字幕服务.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Boolean">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Double">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Single">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseLiveFeedResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseArchiveRelationResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseBuvidResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseCuratedPlaylistResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseEpisodeInteractionResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseLiveAppPlayResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseLiveAreaDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseLiveAreaResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseLiveDanmakuResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseLiveRoomDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponsePgcDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponsePlayerInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponsePlayerWbiResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseSubtitleViewResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseVideoPageResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponsePgcIndexConditionResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponsePgcIndexResultResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseRecommendVideoResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseSubPartition">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseListPartitionVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliDataResponseListVideoPartition">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliResultResponsePgcTimeLineResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BiliResultResponsePlayerInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedCard">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedCardData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedFollowUserList">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedRoom">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveQualityDescription">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveRoomBase">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveRoomCard">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveCoverContent">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedback">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveFeedbackReason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ArchiveRelationResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.BuvidResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.CuratedPlaylistReason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.CuratedPlaylistResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.CuratedPlaylistVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.DashItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.DashVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Dimension">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.EnterRoomMessage">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.EpisodeInteractionResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.FlvItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAnchorInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayCodec">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayFormat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayStream">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayUrl">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppPlayUrlInfo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAppQualityDescription">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveArea">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAreaDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAreaDetailTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAreaGroup">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveAreaResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveDanmakuResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveLevelInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveMedalInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveRelationInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveRoomDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveRoomInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.LiveUserBasicInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcActivityTab">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcArea">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcCelebrity">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcDetailModule">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcDetailModuleData">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcEpisodeDetail">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcEpisodeStat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndex">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcInformationStat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcModuleReport">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcPlayerDialog">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcProgress">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcPublishInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcRating">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcSeason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcSeries">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcStaff">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcTimeLineItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcTimeLineResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcUserStatus">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PlayerInformation">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PlayerWbiResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SegmentBase">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SubtitleDetailResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SubtitleIndexItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SubtitleIndexResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SubtitleItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SubtitleViewResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.TimeLineEpisode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.UgcSeason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoEpisode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoEpisodeArc">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoFormat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageAuthor">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageAuthorDetail">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Level_Info">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPagePart">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageRelated">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageSection">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPageVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Rights">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Vip">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.WebLiveDanmakuHost">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OverflowFlyoutItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.OverflowReason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PartitionTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PartitionVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexConditionResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexFilter">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexFilterValue">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexFirstEpisode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexOrder">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PgcIndexResultResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PlayerArgs">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.PublisherInfo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.RecommendCard">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.RecommendVideoResponse">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.SubPartition">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoArgs">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoPartition">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.VideoStatusInfo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveFeedRoom">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveQualityDescription">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveFeedbackReason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveFeedback">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveArea">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveAreaDetailTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListLiveAreaGroup">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListPgcTimeLineItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListTimeLineEpisode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListVideoPagePart">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListVideoPageRelated">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListVideoPageTag">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListOverflowFlyoutItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListOverflowReason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListPgcIndexFilter">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListPgcIndexFilterValue">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListPgcIndexItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListPgcIndexOrder">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListRecommendCard">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.IListVideoPartition">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListLiveFeedCard">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListCuratedPlaylistVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListDashItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListFlvItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListLiveAppPlayCodec">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListLiveAppPlayFormat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListLiveAppPlayStream">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListLiveAppPlayUrl">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListLiveAppQualityDescription">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPgcArea">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPgcCelebrity">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPgcDetailModule">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPgcEpisodeDetail">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPgcIndex">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPgcSeason">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListSubtitleIndexItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListSubtitleItem">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListVideoEpisode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListVideoFormat">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListVideoPageSection">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListWebLiveDanmakuHost">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListPartitionVideo">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListVideoPartition">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListInt32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ListString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.NullableInt32">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Int64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.NullableInt64">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Object">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.ObjectArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Richasy.BiliKernel.SourceGenerationContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Richasy.BiliKernel.SourceGenerationContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
