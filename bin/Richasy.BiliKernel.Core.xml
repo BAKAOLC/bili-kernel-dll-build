@@ -175,6 +175,25 @@
             附加查询参数.
             </summary>
         </member>
+        <member name="T:Richasy.BiliKernel.AvBvConverter">
+            <summary>
+            AV / BV 号转换器.
+            </summary>
+        </member>
+        <member name="M:Richasy.BiliKernel.AvBvConverter.Av2Bv(System.Int64)">
+            <summary>
+            AV 号转换为 BV 号.
+            </summary>
+            <param name="aid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Richasy.BiliKernel.AvBvConverter.Bv2Av(System.String)">
+            <summary>
+            BV 号转换为 AV 号.
+            </summary>
+            <param name="bvid"></param>
+            <returns></returns>
+        </member>
         <member name="T:Richasy.BiliKernel.Content.BiliResponse">
             <summary>
             BiliBili 响应结构.

@@ -11,8 +11,8 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "QRCoder": "1.6.0",
-          "Richasy.BiliKernel.Abstractions": "0.0.1-preview2",
-          "Richasy.BiliKernel.Core": "0.0.1-preview2",
+          "Richasy.BiliKernel.Abstractions": "0.0.1-preview7",
+          "Richasy.BiliKernel.Core": "0.0.1-preview7",
           "System.Drawing.Common": "9.0.1",
           "Richasy.BiliKernel.Abstractions.Reference": "1.0.0.0",
           "Richasy.BiliKernel.Core.Reference": "1.0.0.0",
@@ -264,7 +264,7 @@
           }
         }
       },
-      "Richasy.BiliKernel.Abstractions/0.0.1-preview2": {
+      "Richasy.BiliKernel.Abstractions/0.0.1-preview7": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "9.0.1",
           "Microsoft.Bcl.HashCode": "6.0.0",
@@ -277,10 +277,10 @@
           }
         }
       },
-      "Richasy.BiliKernel.Core/0.0.1-preview2": {
+      "Richasy.BiliKernel.Core/0.0.1-preview7": {
         "dependencies": {
-          "Richasy.BiliKernel.Abstractions": "0.0.1-preview2",
-          "Richasy.BiliKernel.Grpc": "0.0.1-preview2"
+          "Richasy.BiliKernel.Abstractions": "0.0.1-preview7",
+          "Richasy.BiliKernel.Grpc": "0.0.1-preview7"
         },
         "runtime": {
           "Richasy.BiliKernel.Core.dll": {
@@ -288,7 +288,7 @@
           }
         }
       },
-      "Richasy.BiliKernel.Grpc/0.0.1-preview2": {
+      "Richasy.BiliKernel.Grpc/0.0.1-preview7": {
         "dependencies": {
           "Google.Protobuf": "3.29.3",
           "Grpc.Net.Client": "2.67.0"
@@ -492,17 +492,17 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "Richasy.BiliKernel.Abstractions/0.0.1-preview2": {
+    "Richasy.BiliKernel.Abstractions/0.0.1-preview7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Richasy.BiliKernel.Core/0.0.1-preview2": {
+    "Richasy.BiliKernel.Core/0.0.1-preview7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Richasy.BiliKernel.Grpc/0.0.1-preview2": {
+    "Richasy.BiliKernel.Grpc/0.0.1-preview7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
